@@ -279,6 +279,7 @@ html{
 }
 .box .col-1{
     background-color: rgb(211, 201, 201);
+    display: flex;
     padding: 10px;
     position: static;
     margin: 23px;
