@@ -717,6 +717,9 @@ div.col-body:hover{
         flex-direction: column;
         align-items: center;
     }
+    .event-boxes .event-col-1{
+        margin-bottom: 40px;
+    }
  }
 
 /* chat style */
