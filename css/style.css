@@ -301,6 +301,13 @@ html{
     padding: 23px;
     color: rgb(70, 69, 69);
 }
+ @media (max-width: 600px) {
+    #opportunities .box .col-1{
+         flex-direction: column;
+         align-items: center;
+     }
+}
+
 
 #about-container:hover {
      background-color: rgb(207, 243, 243); 
@@ -402,6 +409,12 @@ html{
     padding: 0px 8px;
     margin: 0px 8px;
 }
+@media (max-width: 600px) {
+    .about-row {
+        flex-direction: column;
+        align-items: center;
+    }
+ }
 #technologies{
     background-color: rgb(214, 213, 213);
     padding-top: 34px;
@@ -714,10 +727,10 @@ div.col-body:hover{
     z-index: 100;
 }
 #open-chat {
-    background-color: #061d37;
+    background-color: #336aa4;
+    border: 2px solid #061d37;
     color: whitesmoke;
-    border: 2px solid #336aa4;
-    padding: 15px 20px;
+    padding: 12px 8px;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 12px;
@@ -725,8 +738,8 @@ div.col-body:hover{
     cursor: pointer;
 }
 #open-chat:hover {
-    background-color: #336aa4;
-    border: 2px solid #061d37;
+    background-color: #061d37;
+    border: 2px solid #336aa4;
     transform: scale(1.1);
     transition: transform 0.3s ease;
 
@@ -742,9 +755,9 @@ div.col-body:hover{
     background-color: rgb(214, 213, 213);
     color: rgb(70, 69, 69);
 }
-#contact:hover{
+#contact h1:hover{
     color: black;
-    transition: transform 0.3 ease-in-out;
+    transition: color 0.2s ease-in-out;
 }
 .center {
     text-align: center;
@@ -755,8 +768,7 @@ div.col-body:hover{
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.7;
-    background: url(../Images/contact2.jpg) no-repeat center center/cover;
+    opacity: 0.
 
 }
 #contact .h-primary{
@@ -785,6 +797,22 @@ div.col-body:hover{
 #contact-box label{
     font-size: 1.2rem;
 }
+
+.submit-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: whitesmoke;
+  border: 2px solid #061d37;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
 /* Footer */
 .foot-.container {
     max-width: 1200px;
@@ -837,22 +865,28 @@ div.col-body:hover{
 }
 .foot-h2:hover{
     color: grey;
+    transition: color 0.2s ease;
 }
 .contacts:hover{
     color: grey;
+    transition: color 0.2s ease;
 }
 .foot-container .foot-items:hover{
-    text-decoration: underline;
-    color: orangered;
+    text-decoration: underline ;
+    color: rgb(148, 217, 44);
+    transition: color 0.2s ease;
 }
 .footer-content .face:hover{
     color: #5579c8;
+    transition: color 0.2s ease;
 }
 .footer-content .twit:hover{
     color:  #00acee;
+    transition: color 0.2s ease;
 }
 .footer-content .insta:hover{
     color:  #f42f92;
+    transition: color 0.2s ease;
 }
 
 
